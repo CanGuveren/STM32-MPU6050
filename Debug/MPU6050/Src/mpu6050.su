@@ -1,0 +1,14 @@
+../MPU6050/Src/mpu6050.c:16:19:regWrite	40	static
+../MPU6050/Src/mpu6050.c:26:19:regRead	40	static
+../MPU6050/Src/mpu6050.c:37:19:MPU6050_Init	24	static
+../MPU6050/Src/mpu6050.c:76:6:MPU6050_readGyro	32	static
+../MPU6050/Src/mpu6050.c:92:9:MPU6050_readGyroX	16	static
+../MPU6050/Src/mpu6050.c:101:9:MPU6050_readGyroY	16	static
+../MPU6050/Src/mpu6050.c:110:9:MPU6050_readGyroZ	16	static
+../MPU6050/Src/mpu6050.c:120:6:MPU6050_readAccel	32	static
+../MPU6050/Src/mpu6050.c:136:9:MPU6050_readAccelX	16	static
+../MPU6050/Src/mpu6050.c:145:9:MPU6050_readAccelY	16	static
+../MPU6050/Src/mpu6050.c:154:9:MPU6050_readAccelZ	16	static
+../MPU6050/Src/mpu6050.c:164:6:MPU6050_ComplemantryFilter	48	static
+../MPU6050/Src/mpu6050.c:189:19:MPU6050_TempSensor	24	static
+../MPU6050/Src/mpu6050.c:202:7:MPU6050_readTemp	16	static
