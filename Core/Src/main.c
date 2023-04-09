@@ -43,7 +43,7 @@ I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
 MPU6050_InitTypeDef MPU6050Config;
-MPU6050_DataAxis AccelData;
+MPU6050_DataAxis AccelData, GyroData;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -56,7 +56,9 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+uint32_t millis;
+char Flag = 1;
+float temperature;
 /* USER CODE END 0 */
 
 /**
@@ -94,7 +96,7 @@ int main(void)
   MPU6050Config.AccelRange = ACCEL_RANGE_2;
   MPU6050Config.GyroRange = GYRO_RANGE_250;
   MPU6050_Init(&MPU6050Config);
-  MPU6050_TempSensor(OFF);
+  MPU6050_TemperatureSensor(OFF);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -104,7 +106,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  MPU6050_readAccel(&AccelData);
+	  //MPU6050_readAccel(&AccelData);
+	  //MPU6050_readGyro(&GyroData);
+
+	  temperature = MPU6050_readTemperature();
 
   }
   /* USER CODE END 3 */
